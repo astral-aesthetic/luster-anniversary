@@ -1,0 +1,399 @@
+/* ============================================================
+   LUSTER PRODUCTS EMAIL STYLESHEET
+   luster-products-email.css
+   ============================================================ */
+
+
+/* ============================================================
+   RESET & BASE
+============================================================ */
+body,
+table,
+td,
+a {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+table,
+td {
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+  border: 0;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #f0f1f5;
+}
+
+
+/* ============================================================
+   WRAPPER & CONTAINER
+============================================================ */
+.email-wrapper {
+  width: 100%;
+  background-color: #f0f1f5;
+}
+
+.email-container {
+  max-width: 600px;
+  min-height: 600px;
+  margin: 0 auto;
+  background-color: #fae3e7;
+}
+
+
+/* ============================================================
+   TYPOGRAPHY
+============================================================ */
+.text-body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18.67px;
+  line-height: 1.2;
+  color: #272727;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.text-heading {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 33.33px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.text-subtext {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: #b4b4b4;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.text-closing {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18.67px;
+  line-height: 1.2;
+  text-align: center;
+  padding: 0 20px;
+}
+
+
+/* ============================================================
+   SPACERS
+============================================================ */
+.spacer-sm {
+  font-size: 0;
+  height: 16px;
+  line-height: 0;
+}
+
+
+/* ============================================================
+   FULL-WIDTH IMAGES
+============================================================ */
+.full-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+
+/* ============================================================
+   CTA BUTTONS
+============================================================ */
+.cta-outer {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Primary CTA – border-radius: 15px */
+.cta-cell {
+  height: 50px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  background-color: #f98cbd;
+  border-radius: 15px;
+}
+
+.cta-cell a {
+  display: block;
+  text-decoration: none;
+}
+
+.cta-cell td {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.4;
+  letter-spacing: 0;
+  box-sizing: border-box;
+}
+
+/* Secondary CTA – border-radius: 11px */
+.cta-cell-sm {
+  height: 50px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  background-color: #f98cbd;
+  border-radius: 11px;
+}
+
+.cta-cell-sm a {
+  display: block;
+  text-decoration: none;
+}
+
+.cta-cell-sm td {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.4;
+  box-sizing: border-box;
+}
+
+
+/* ============================================================
+   CONTENT CARD GRID (2-col: dark pink feature cards)
+============================================================ */
+.card-grid-table {
+  border-spacing: 0;
+  border-collapse: separate;
+  width: 100%;
+  max-width: 100%;
+  table-layout: fixed;
+}
+
+.card-grid-inner {
+  border-spacing: 0;
+  border-collapse: separate;
+  width: 100%;
+  max-width: 560px;
+  table-layout: fixed;
+  margin: 0 auto;
+}
+
+.card-col-half {
+  width: 48.57%;
+  box-sizing: border-box;
+  vertical-align: top;
+  background-color: #f98cbd;
+  border-radius: 15px;
+}
+
+.card-col-half-inner {
+  padding: 20px;
+}
+
+.card-label {
+  color: #ffffff;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 18.67px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+
+/* ============================================================
+   PRODUCT CATEGORY GRID (3-col: light pink tiles)
+============================================================ */
+.category-grid-inner {
+  border-spacing: 0;
+  border-collapse: separate;
+  width: 100%;
+  max-width: 560px;
+  table-layout: fixed;
+  margin: 0 auto;
+}
+
+.category-col {
+  width: 31.43%;
+  box-sizing: border-box;
+  vertical-align: top;
+  background-color: #ffcdde;
+  border-radius: 15px;
+}
+
+.category-col-inner {
+  padding: 20px;
+}
+
+.category-col a {
+  display: block;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.category-label {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+
+/* ============================================================
+   GRID GUTTER
+============================================================ */
+.grid-gutter {
+  width: 16px;
+  box-sizing: border-box;
+  font-size: 0;
+}
+
+
+/* ============================================================
+   DIVIDER
+============================================================ */
+.divider {
+  width: 100%;
+  max-width: 560px;
+  height: 1px;
+  background-color: #f3b2bd;
+  border-radius: 999px;
+  line-height: 1px;
+  font-size: 0;
+}
+
+
+/* ============================================================
+   SOCIAL ICONS BAR
+============================================================ */
+.social-bar {
+  border-spacing: 0;
+  border-collapse: separate;
+  width: 100%;
+  max-width: 100%;
+  table-layout: fixed;
+  background-color: #ffffff;
+}
+
+.social-bar-inner {
+  border-spacing: 0;
+  border-collapse: separate;
+  width: 100%;
+  max-width: 451px;
+  table-layout: fixed;
+  margin: 0 auto;
+}
+
+.social-bar-cell {
+  text-align: center;
+  padding: 20px;
+}
+
+.social-icon-col {
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+.social-icon-col a {
+  display: block;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+
+/* ============================================================
+   FOOTER
+============================================================ */
+.footer-wrapper {
+  border-spacing: 0;
+  border-collapse: separate;
+  width: 100%;
+  max-width: 100%;
+  table-layout: fixed;
+  background-color: #f98cbd;
+}
+
+.footer-inner {
+  border-spacing: 0;
+  border-collapse: separate;
+  width: 100%;
+  max-width: 600px;
+  table-layout: fixed;
+  margin: 0 auto;
+}
+
+.footer-cell {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding: 17px 20px;
+}
+
+.footer-cell a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-links {
+  color: #faf6f1;
+  font-size: 16px;
+  letter-spacing: -0.025em;
+  text-align: center;
+}
+
+.footer-links a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+
+/* ============================================================
+   RESPONSIVE – MOBILE (max-width: 450px)
+   Two-column and three-column grids collapse to single column
+============================================================ */
+@media only screen and (max-width: 450px) {
+
+  .email-container {
+    width: 100% !important;
+  }
+
+  /* Hide desktop multi-column grid layouts */
+  .grid-desktop {
+    display: none !important;
+  }
+
+  /* Show mobile stacked layouts */
+  .grid-mobile {
+    display: table !important;
+  }
+
+  .grid-mobile-col {
+    width: 100% !important;
+    display: block !important;
+  }
+
+  .grid-mobile-col img {
+    max-width: 450px !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+}
